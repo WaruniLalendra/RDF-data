@@ -4,12 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SE Student FOAF Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #666;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>SE Student FOAF Profile</h1>
-    <p>This page hosts the FOAF profile of SE Student.</p>
-    <p>You can find the FOAF document <a href="assignment3.rdf">here</a>.</p>
+    <div class="container">
+        <h1>SE Student FOAF Profile</h1>
+        <div vocab="http://xmlns.com/foaf/0.1/">
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+            <p>Name: <span property="name">SE_Student_FN SE_Student_LN</span></p>
+            <p>Title: <span property="title">SE_Student_01</span></p>
+            <p>Given Name: <span property="givenname">SE_Student_FN</span></p>
+            <p>Family Name: <span property="family_name">SE_Student_LN</span></p>
+            <!-- Contact Information -->
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:stdemailse1@gmail.com" property="mbox">stdemailse1@gmail.com</a></p>
+            <p>Phone: <span property="phone">222-222-227</span></p>
+            <!-- Additional Information -->
+            <h2>Additional Information</h2>
+            <p>Depiction: <img src="http://se_std_image.jpg" property="depiction" alt="SE Student Image"></p>
+            <p>Workplace Homepage: <a href="klnA11301" property="workplaceHomepage">klnA11301</a></p>
+            <p>School Homepage: <a href="klnA7B22" property="schoolHomepage">klnA7B22</a></p>
+            <!-- Relationships -->
+            <h2>Relationships</h2>
+            <p>Knows:
+                <ul>
+                    <li>
+                        <span typeof="Person">
+                            <span property="name">SE_Student_02</span>
+                            <a href="mailto:stdemailse2@gmail.com" property="mbox">stdemailse2@gmail.com</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span typeof="Person">
+                            <span property="name">SE_Student_03</span>
+                            <a href="mailto:stdemailse3@gmail.com" property="mbox">stdemailse3@gmail.com</a>
+                        </span>
+                    </li>
+                </ul>
+            </p>
+            <p>You can find the FOAF document <a href="assignment3.rdf">here</a>.</p>
 
-    <!-- Additional information about the FOAF profile can be added here -->
+        </div>
+    </div>
 </body>
 </html>
