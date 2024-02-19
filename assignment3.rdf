@@ -1,0 +1,30 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>SE_Student_FN SE_Student_LN</foaf:name>
+<foaf:title>SE_Student_01</foaf:title>
+<foaf:givenname>SE_Student_FN</foaf:givenname>
+<foaf:family_name>SE_Student_LN</foaf:family_name>
+<foaf:mbox rdf:resource="mailto:stdemailse1@gmail.com"/>
+<foaf:depiction rdf:resource="http://se_std_image.jpg"/>
+<foaf:phone rdf:resource="tel:222-222-227"/>
+<foaf:workplaceHomepage rdf:resource="klnA11301"/>
+<foaf:schoolHomepage rdf:resource="klnA7B22"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>SE_Student_02</foaf:name>
+<foaf:mbox rdf:resource="mailto:stdemailse2@gmail.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>SE_Student_03</foaf:name>
+<foaf:mbox rdf:resource="mailto:stdemailse3@gmail.com"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
